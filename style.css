@@ -1,0 +1,477 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: auto;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+
+
+.container_left_side {
+    overflow-y: scroll;
+    height: 100vh;
+    position: fixed;
+    width: 250px;
+}
+
+.left_side {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 100px;
+    height: auto;
+}
+
+.right_side {
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left_side__logo {
+    width: 100%;
+    height: 84.48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 16px;
+    align-items: center;
+}
+
+.left_side_child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left_side_child.left_side__item nav {
+    font-family: "Roboto", sans-serif;
+    color: #757575;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 16px;
+    width: 100%;
+}
+
+.left_side_child.left_side__item nav:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.left_side_child.left_side__item a {
+    font-family: "Roboto", sans-serif;
+    color: #757575;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 16px;
+    width: 100%;
+    display: block;
+}
+.left_side_child.left_side__item a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.left_side_child.left_side__bottom nav {
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px 16px;
+    width: 100%;
+}
+
+
+.left_side_child.left_side__bottom nav:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.right_side__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 84.48px;
+}
+
+.right_side__header .txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_side__header .txt p {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+}
+
+.right_side__header .icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.right_side__header .icon i {
+    font-size: 20px;
+}
+
+.right_side__hero {
+    height: 612px;
+    width: 100%;
+    padding: 0 16px;
+    position: relative;
+}
+
+.right_side__hero__image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.right_side__hero__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.right_side__hero .sologan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 36px;
+    top: 16px;
+    gap: 10px;
+}
+
+.right_side__hero .sologan .txt p:nth-child(1) {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    color: white;
+    font-size: 75px;
+    font-weight: 400;
+
+}
+
+.right_side__hero .sologan .txt p:nth-child(2) {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    color: white;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.right_side__hero .sologan button {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    background-color: #000;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.right_side__hero .sologan button:hover {
+    color: #000;
+    background-color: #ccc
+}
+
+.right_side__products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+    padding: 16px;
+}
+
+.products__count {
+    width: 100%;
+    font-size: 15px;
+    color: #757575;
+    font-family: "Montserrat", sans-serif;
+}
+
+.products__all {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.products__all .product {
+    width: calc(25% - 7.5px);
+    height: 332px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.product_image {
+    height: 270px;
+    width: 100%;
+}
+
+.product_image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(0.7);
+}
+
+.product_des {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.right_side__sub {
+    width: 100%;
+    height: 290px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    gap: 10px;
+}
+
+.right_side__sub p:nth-child(1) {
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.5;
+
+}
+
+.right_side__sub p:nth-child(2) {
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.right_side__sub input {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.right_side__sub button {
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white;
+    font-size: 15px;
+    width: 120px;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.right_side__sub button:hover {
+    background-color: #ccc !important;
+    color: black;
+}
+
+.right_side__information {
+    width: 100%;
+    height: 450px;
+    background-color: #f1f1f1;
+    color: #000;
+    padding: 5rem 8px 0 8px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 8rem;
+
+}
+
+.information_body {
+    display: flex;
+    flex-direction: column;
+}
+
+.information_body.contact {
+    width: 300px;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    gap: 10px;
+}
+
+.information_body.contact p:nth-child(1) {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.information_body.contact p:nth-child(2) {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.information_body.contact input {
+    height: 35.5px;
+    width: 100%;
+    padding-left: 8px;
+    border: 1px solid #ccc !important;
+}
+
+.information_body.contact button {
+    height: 34px;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.information_body.contact button:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.information_body.about {
+    align-items: center;
+    gap: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.information_body.about h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.information_body.about p a {
+    color: #000;
+    font-size: 12px;
+}
+
+.store_direction {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+}
+
+.information_body.store {
+    align-items: flex-start;
+}
+
+.store_direction p:nth-child(1) {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.store_direction span {
+    display: flex;
+    gap: 5px;
+}
+
+
+.store_accept span i {
+    font-size: 12px;
+}
+
+.store_accept span p {
+    font-size: 12px;
+}
+
+.store_accept {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+}
+
+.information_body.store {
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.store_accept p:nth-child(1) {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.store_accept span {
+    display: flex;
+    gap: 5px;
+}
+
+
+.store_direction span i {
+    font-size: 12px;
+}
+
+.store_direction span p {
+    font-size: 12px;
+}
+
+.logo_social {
+    display: flex;
+    gap: 10px;
+}
+
+.logo_social i {
+    font-size: 20px;
+    color: black;
+}
+
+.logo_social i:hover {
+    opacity: 0.60;
+}
+
+.right_side__footnote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70.5px;
+    background-color: #000;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    width: 100%;
+}
+
+.right_side__footnote a {
+    color: white;
+    margin-left: 2px;
+}
